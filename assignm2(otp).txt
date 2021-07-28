@@ -1,0 +1,7 @@
+import random as r
+import string as s
+len=int(input("enter the length of your choice: "))
+char= s.ascii_lowercase + s.ascii_uppercase + s.digits
+for i in range(len):
+    print(r.choice(char),end="")
+    
