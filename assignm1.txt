@@ -1,0 +1,9 @@
+li = []
+len = int(input("enter the length: "))
+for i in range(len):
+    ip = int(input("enter the elements: "))
+    li.append(ip)
+
+li = sorted(li)
+li.reverse()
+print(li)
