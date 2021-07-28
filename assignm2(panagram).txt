@@ -1,0 +1,22 @@
+import string as s
+
+st = input("Enter the string: ")
+srng = s.ascii_lowercase
+st = st.lower()
+
+
+def f(st):
+    for i in srng:
+        if i in st:
+            continue
+        elif i == " ":
+            continue
+        else:
+            return False
+    return True
+
+
+if f(st):
+    print("panagram")
+else:
+    print("not a panagram")
